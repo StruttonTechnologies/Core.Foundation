@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NuPackConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PackArgs>
+    <OutputDirectory>G:\source\repos\StruttonTechnologies\CoreCapabilities\ST.Core.Domain\bin\NuPack</OutputDirectory>
+    <IncludeSymbols>false</IncludeSymbols>
+    <IncludeSource>false</IncludeSource>
+    <NoBuild>false</NoBuild>
+    <NoDependencies>false</NoDependencies>
+  </PackArgs>
+  <SymbolServers />
+</NuPackConfig>

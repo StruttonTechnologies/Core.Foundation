@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>StruttonTechnologies.Core.Identity.Coordinator.Contracts</PackageId>
+    <Description>MediatR command and query contracts for StruttonTechnologies.Core.Identity orchestration.</Description>
+    <Title>StruttonTechnologies.Core.Identity Coordinator Contracts</Title>
+    <PackageTags>core,identity,dispatch,contracts,command,query,CQRS,MediatR,strutton,StruttonTechnologies</PackageTags>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>alpha</VersionSuffix>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Admin\**" />
+    <Compile Remove="PersonLinking\**" />
+    <EmbeddedResource Remove="Admin\**" />
+    <EmbeddedResource Remove="PersonLinking\**" />
+    <None Remove="Admin\**" />
+    <None Remove="PersonLinking\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExternalLogins\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dtos\StruttonTechnologies.Core.Identity.Dtos\StruttonTechnologies.Core.Identity.Dtos.csproj" />
+    <ProjectReference Include="..\..\Interfaces\MediatR.Abstracts\StruttonTechnologies.MediatR.Abstracts.csproj" />
+  </ItemGroup>
+</Project>

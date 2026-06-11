@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>StruttonTechnologies.Core.EF</PackageId>
+    <Title>Entity Framework Infrastructure for ST.Core</Title>
+    <Description>
+			Entity Framework DbContext contract interfaces for the System module in Strutton Technologies CoreCapabilities —
+			defines module-scoped data access boundaries implemented by the root application DbContext.
+		</Description>
+    <PackageTags>
+			core;CoreCapabilities;entityframework;efcore;dbcontext;data-access;
+			architecture;clean-architecture;modular;modular-architecture;
+			contracts;interfaces;dotnet;strutton;struttontechnologies
+		</PackageTags>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>alpha</VersionSuffix>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domains\StruttonTechnologies.Core.Domain\StruttonTechnologies.Core.Domain.csproj" />
+  </ItemGroup>
+</Project>

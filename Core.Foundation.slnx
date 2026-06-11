@@ -16,6 +16,7 @@
     <Project Path="Dtos/StruttonTechnologies.Core.Identity.Dtos/StruttonTechnologies.Core.Identity.Dtos.csproj" />
   </Folder>
   <Folder Name="/Interfaces/">
+    <Project Path="Interfaces/StruttonTechnologies.Core.Composition.Contracts/StruttonTechnologies.Core.Composition.Contracts.csproj" Id="4b5f84b8-e44c-43d5-b8bb-2e7cd33a5fbf" />
     <Project Path="Interfaces/StruttonTechnologies.Core.EF.Contracts/StruttonTechnologies.Core.EF.Contracts.csproj" />
     <Project Path="Interfaces/StruttonTechnologies.Core.Identity.Domain.Contracts/StruttonTechnologies.Core.Identity.Domain.Contracts.csproj" />
     <Project Path="Interfaces/StruttonTechnologies.Core.Identity.Orchestration.Contracts/StruttonTechnologies.Core.Identity.Orchestration.Contracts.csproj" />

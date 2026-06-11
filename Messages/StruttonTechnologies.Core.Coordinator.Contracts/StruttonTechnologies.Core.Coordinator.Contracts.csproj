@@ -17,6 +17,6 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\..\Dtos\StruttonTechnologies.Core.Coordinator.Dtos\StruttonTechnologies.Core.Coordinator.Dtos.csproj" />
 	  <ProjectReference Include="..\..\Dtos\StruttonTechnologies.Core.Dtos\StruttonTechnologies.Core.Dtos.csproj" />
-	  <ProjectReference Include="..\..\Interfaces\MediatR.Abstracts\StruttonTechnologies.MediatR.Abstracts.csproj" />
+	  <ProjectReference Include="..\..\Interfaces\StruttonTechnologies.MediatR.Abstracts\StruttonTechnologies.MediatR.Abstracts.csproj" />
 	</ItemGroup>
 </Project>

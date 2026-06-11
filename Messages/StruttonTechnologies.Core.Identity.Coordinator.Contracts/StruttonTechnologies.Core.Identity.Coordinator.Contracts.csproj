@@ -23,6 +23,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Dtos\StruttonTechnologies.Core.Identity.Dtos\StruttonTechnologies.Core.Identity.Dtos.csproj" />
-    <ProjectReference Include="..\..\Interfaces\MediatR.Abstracts\StruttonTechnologies.MediatR.Abstracts.csproj" />
+    <ProjectReference Include="..\..\Interfaces\StruttonTechnologies.MediatR.Abstracts\StruttonTechnologies.MediatR.Abstracts.csproj" />
   </ItemGroup>
 </Project>

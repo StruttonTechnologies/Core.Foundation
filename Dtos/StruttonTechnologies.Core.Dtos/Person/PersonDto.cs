@@ -1,8 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿namespace StruttonTechnologies.Core.Dtos.Person;
 
-namespace StruttonTechnologies.Core.Dtos.Person;
-
-[ExcludeFromCodeCoverage]
 public class PersonDto
 {
     public string Id { get; set; } = default!;

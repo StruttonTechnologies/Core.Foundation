@@ -1,8 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿namespace StruttonTechnologies.Core.Identity.Domain.Models;
 
-namespace StruttonTechnologies.Core.Identity.Domain.Models;
-
-[ExcludeFromCodeCoverage]
 public class JwtTokenOptions
 {
     public string SigningKey { get; set; } = string.Empty;

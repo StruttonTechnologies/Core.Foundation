@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace StruttonTechnologies.Core.Domain.Entities.Audit;
+﻿namespace StruttonTechnologies.Core.Domain.Entities.Audit;
 
 /// <summary>
 /// Represents an audit log entry that records a change made to an entity.
@@ -10,7 +8,6 @@ namespace StruttonTechnologies.Core.Domain.Entities.Audit;
 /// soft-delete, restore, or delete operations performed against
 /// business entities in the system.
 /// </remarks>
-[ExcludeFromCodeCoverage]
 public class AuditLog
 {
     /// <summary>

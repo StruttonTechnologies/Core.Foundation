@@ -1,7 +1,5 @@
 ﻿using StruttonTechnologies.Core.Domain.Entities.Base;
 
-using System.Diagnostics.CodeAnalysis;
-
 namespace StruttonTechnologies.Core.Domain.Entities.Configuration;
 
 /// <summary>
@@ -28,7 +26,6 @@ namespace StruttonTechnologies.Core.Domain.Entities.Configuration;
 /// <typeparam name="TKey">
 /// The key type used for the configuration entity.
 /// </typeparam>
-[ExcludeFromCodeCoverage]
 public abstract class ApplicationConfigurationBase<TKey> : EntityBase<TKey>
     where TKey : IEquatable<TKey>
 {

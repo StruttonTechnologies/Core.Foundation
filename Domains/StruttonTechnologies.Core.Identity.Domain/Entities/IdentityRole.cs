@@ -1,12 +1,9 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace StruttonTechnologies.Core.Identity.Domain.Entities;
+﻿namespace StruttonTechnologies.Core.Identity.Domain.Entities;
 
 /// <summary>
 /// Concrete identity role with customizable key/>.
 /// </summary>
 /// <typeparam name="TKey">The type of the unique identifier for the role.</typeparam>
-[ExcludeFromCodeCoverage]
 public class IdentityRole<TKey> : Microsoft.AspNetCore.Identity.IdentityRole<TKey>
     where TKey : IEquatable<TKey>
 {

@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace StruttonTechnologies.Core.Coordinator.Contracts.CrudDispatch.Queries;
+namespace StruttonTechnologies.Core.Coordinator.Contracts.Crud.Queries;
 
 /// <summary>
 /// Query to retrieve multiple DTOs by their IDs with optional sorting, pagination, batching, and includes.

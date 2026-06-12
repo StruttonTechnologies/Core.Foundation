@@ -1,8 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿namespace StruttonTechnologies.Core.Identity.Dtos.Authentication;
 
-namespace StruttonTechnologies.Core.Identity.Dtos.Authentication;
-
-[ExcludeFromCodeCoverage]
 
 public record RegisterUserRequestDto(
     string Email,

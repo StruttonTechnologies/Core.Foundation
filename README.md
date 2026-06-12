@@ -48,7 +48,6 @@ Core.Foundation
 │   ├── StruttonTechnologies.Core.Orchestration.Contracts
 │   ├── StruttonTechnologies.Core.Identity.Domain.Contracts
 │   ├── StruttonTechnologies.Core.Identity.Orchestration.Contracts
-│   └── StruttonTechnologies.MediatR.Abstracts
 │
 └── Messages
     ├── StruttonTechnologies.Core.Coordinator.Contracts

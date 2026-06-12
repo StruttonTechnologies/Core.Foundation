@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace StruttonTechnologies.Core.Identity.Coordinator.Contracts.Users.Commands;
 
@@ -10,7 +8,6 @@ namespace StruttonTechnologies.Core.Identity.Coordinator.Contracts.Users.Command
 /// <param name="UserName">The username for the new user.</param>
 /// <param name="Email">The email address for the new user.</param>
 /// <param name="Password">The password for the new user (optional if using external authentication).</param>
-[ExcludeFromCodeCoverage]
 public sealed record CreateUserCommand(
     string UserName,
     string? Email = null,

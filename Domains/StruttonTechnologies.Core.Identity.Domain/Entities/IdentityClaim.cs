@@ -1,12 +1,9 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace StruttonTechnologies.Core.Identity.Domain.Entities;
+﻿namespace StruttonTechnologies.Core.Identity.Domain.Entities;
 
 /// <summary>
 /// Base identity claim with provider metadata.
 /// </summary>
 /// <typeparam name="TKey">The type of the primary key for the user associated with the claim.</typeparam>
-[ExcludeFromCodeCoverage]
 public class IdentityClaim<TKey> : Microsoft.AspNetCore.Identity.IdentityUserClaim<TKey>
     where TKey : IEquatable<TKey>
 {

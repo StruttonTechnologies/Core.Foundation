@@ -1,11 +1,8 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace StruttonTechnologies.Core.Dtos.Navigation;
+﻿namespace StruttonTechnologies.Core.Dtos.Navigation;
 
 /// <summary>
 /// Represents metadata information for an application.
 /// </summary>
-[ExcludeFromCodeCoverage]
 public class AppMetaDataDto
 {
     /// <summary>

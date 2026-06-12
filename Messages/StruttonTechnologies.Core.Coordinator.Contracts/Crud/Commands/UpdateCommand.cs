@@ -1,4 +1,4 @@
-﻿namespace StruttonTechnologies.Core.Coordinator.Contracts.CrudDispatch.Commands;
+﻿namespace StruttonTechnologies.Core.Coordinator.Contracts.Crud.Commands;
 
 /// <summary>
 /// Represents a command to update a DTO by Id.

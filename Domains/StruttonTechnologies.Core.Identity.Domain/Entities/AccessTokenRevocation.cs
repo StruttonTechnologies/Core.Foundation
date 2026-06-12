@@ -1,12 +1,9 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace StruttonTechnologies.Core.Identity.Domain.Entities;
+﻿namespace StruttonTechnologies.Core.Identity.Domain.Entities;
 
 /// <summary>
 /// Represents a revoked access token JTI persisted for revocation checks.
 /// </summary>
 /// <typeparam name="TKey">The type of the user identifier.</typeparam>
-[ExcludeFromCodeCoverage]
 public class AccessTokenRevocation<TKey>
     where TKey : IEquatable<TKey>
 {

@@ -1,8 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿namespace StruttonTechnologies.Core.Domain.Entities.Base;
 
-namespace StruttonTechnologies.Core.Domain.Entities.Base;
-
-[ExcludeFromCodeCoverage]
 public class BaseNavEntity<TPerson, TKey>
     where TKey : IEquatable<TKey>
     where TPerson : Person<TKey>

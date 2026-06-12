@@ -19,10 +19,10 @@
     <Folder Include="ExternalLogins\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="MediatR.Contracts" />
     <PackageReference Include="Microsoft.Extensions.Identity.Stores" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Dtos\StruttonTechnologies.Core.Identity.Dtos\StruttonTechnologies.Core.Identity.Dtos.csproj" />
-    <ProjectReference Include="..\..\Interfaces\StruttonTechnologies.MediatR.Abstracts\StruttonTechnologies.MediatR.Abstracts.csproj" />
   </ItemGroup>
 </Project>

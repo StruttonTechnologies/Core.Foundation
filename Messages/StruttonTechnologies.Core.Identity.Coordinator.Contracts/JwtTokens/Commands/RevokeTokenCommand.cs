@@ -3,7 +3,7 @@
 /// <summary>
 /// Command to revoke JWT tokens. Can revoke a specific token or all tokens for a user.
 /// </summary>
-public sealed record RevokeTokenCommand : IRequest<IUnit>
+public sealed record RevokeTokenCommand : IRequest<Unit>
 {
     /// <summary>
     /// The specific token to revoke (optional if UserId is provided).

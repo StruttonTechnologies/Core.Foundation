@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace StruttonTechnologies.Core.Coordinator.Contracts.CrudDispatch.Queries;
+namespace StruttonTechnologies.Core.Coordinator.Contracts.Crud.Queries;
 
 /// <summary>
 /// Query for retrieving DTOs by filter with optional sorting, pagination, batching, and includes.

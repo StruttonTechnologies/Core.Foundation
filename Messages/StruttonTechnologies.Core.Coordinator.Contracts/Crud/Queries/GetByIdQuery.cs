@@ -1,4 +1,4 @@
-﻿namespace StruttonTechnologies.Core.Coordinator.Contracts.CrudDispatch.Queries;
+﻿namespace StruttonTechnologies.Core.Coordinator.Contracts.Crud.Queries;
 
 /// <summary>
 /// Query to retrieve a single DTO by its ID.

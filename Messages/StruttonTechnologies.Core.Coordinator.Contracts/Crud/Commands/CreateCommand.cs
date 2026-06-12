@@ -1,4 +1,4 @@
-﻿namespace StruttonTechnologies.Core.Coordinator.Contracts.CrudDispatch.Commands;
+﻿namespace StruttonTechnologies.Core.Coordinator.Contracts.Crud.Commands;
 
 /// <summary>
 /// Represents a request to create a new DTO.

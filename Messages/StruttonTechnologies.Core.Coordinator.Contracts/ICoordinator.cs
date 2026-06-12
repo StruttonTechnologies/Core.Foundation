@@ -1,6 +1,4 @@
-﻿using static StruttonTechnologies.MediatR.Abstracts.IUnit;
-
-namespace StruttonTechnologies.Core.Coordinator.Contracts;
+﻿namespace StruttonTechnologies.Core.Coordinator.Contracts;
 
 /// <summary>
 /// Abstraction over MediatR for dispatching commands and queries.

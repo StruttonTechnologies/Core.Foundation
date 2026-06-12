@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.CodeAnalysis;
+
 using StruttonTechnologies.Core.Domain.Contracts;
 
 namespace StruttonTechnologies.Core.Domain.Entities.Base;
@@ -9,7 +9,6 @@ namespace StruttonTechnologies.Core.Domain.Entities.Base;
 /// soft-delete support, and optimistic concurrency control.
 /// </summary>
 /// <typeparam name="TKey">The entity key type.</typeparam>
-[ExcludeFromCodeCoverage]
 public abstract class EntityBase<TKey> : IEntity<TKey>
     where TKey : IEquatable<TKey>
 {

@@ -1,1 +1,1 @@
-﻿global using StruttonTechnologies.MediatR.Abstracts;
+﻿global using MediatR;

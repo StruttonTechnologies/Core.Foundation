@@ -1,8 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿namespace StruttonTechnologies.Core.Identity.Coordinator.Contracts.Authentication.Commands;
 
-namespace StruttonTechnologies.Core.Identity.Coordinator.Contracts.Authentication.Commands;
-
-[ExcludeFromCodeCoverage]
 public class RegisterUserCommand : IRequest<RegistrationResultDto>
 {
     public string Email { get; }

@@ -1,8 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿namespace StruttonTechnologies.Core.Dtos.Navigation;
 
-namespace StruttonTechnologies.Core.Dtos.Navigation;
-
-[ExcludeFromCodeCoverage]
 public class QuickLinkDto
 {
     public Guid Id { get; set; }

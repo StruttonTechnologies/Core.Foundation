@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-using StruttonTechnologies.Core.Domain.Entities.Base;
+﻿using StruttonTechnologies.Core.Domain.Entities.Base;
 
 namespace StruttonTechnologies.Core.Domain.Entities;
 
@@ -13,7 +11,6 @@ namespace StruttonTechnologies.Core.Domain.Entities;
 /// person-related properties such as name, contact information, and address.
 /// Applications may use this class directly or inherit from it to create custom person entities.
 /// </remarks>
-[ExcludeFromCodeCoverage]
 public class Person<TKey> : EntityBase<TKey>
     where TKey : IEquatable<TKey>
 {

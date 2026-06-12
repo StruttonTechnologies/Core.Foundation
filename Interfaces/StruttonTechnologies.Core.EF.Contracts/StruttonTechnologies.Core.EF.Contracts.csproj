@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <PackageId>StruttonTechnologies.Core.EF</PackageId>
+    <PackageId>StruttonTechnologies.Core.EF.Contracts</PackageId>
     <Title>Entity Framework Infrastructure for ST.Core</Title>
     <Description>
 			Entity Framework DbContext contract interfaces for the System module in Strutton Technologies CoreCapabilities —

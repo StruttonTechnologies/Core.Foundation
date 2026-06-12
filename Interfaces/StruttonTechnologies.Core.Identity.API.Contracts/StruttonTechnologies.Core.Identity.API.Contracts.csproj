@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>StruttonTechnologies.Core.Identity.API.Contracts</AssemblyName>
+    <RootNamespace>StruttonTechnologies.Core.Identity.API.Contracts</RootNamespace>
+
+    <PackageId>StruttonTechnologies.Core.Identity.API.Contracts</PackageId>
+    <Description>Contracts and request abstractions for the Strutton Technologies Identity API.</Description>
+
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+</Project>

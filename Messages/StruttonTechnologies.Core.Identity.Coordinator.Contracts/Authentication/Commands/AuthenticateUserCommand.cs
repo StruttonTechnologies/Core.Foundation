@@ -1,13 +1,9 @@
 ﻿namespace StruttonTechnologies.Core.Identity.Coordinator.Contracts.Authentication.Commands;
 
-public class AuthenticateUserCommand : IRequest<AuthenticationResultDto>
-{
-    public string Email { get; }
-    public string Password { get; }
-
-    public AuthenticateUserCommand(string email, string password)
-    {
-        Email = email;
-        Password = password;
-    }
-}
+/// <summary>
+/// Command to authenticate a user using email and password.
+/// </summary>
+public sealed record AuthenticateUserCommand(
+    string Email,
+    string Password)
+    : IRequest<AuthenticationResultDto>;

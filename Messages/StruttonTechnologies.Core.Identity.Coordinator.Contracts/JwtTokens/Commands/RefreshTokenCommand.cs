@@ -3,4 +3,6 @@
 /// <summary>
 /// Command to refresh JWT tokens using a refresh token.
 /// </summary>
-public sealed record RefreshTokenCommand(string RefreshToken) : IRequest<TokenResponseDto>;
+public sealed record RefreshTokenCommand(
+    string RefreshToken)
+    : IRequest<RefreshTokenResultDto>;

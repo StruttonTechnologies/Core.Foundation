@@ -4,7 +4,6 @@
     <File Path="Directory.Build.props" />
     <File Path="Directory.Build.targets" />
     <File Path="Directory.Packages.props" />
-    <File Path="README.md" />
   </Folder>
   <Folder Name="/Domains/">
     <Project Path="Domains/StruttonTechnologies.Core.Domain/StruttonTechnologies.Core.Domain.csproj" />
@@ -16,13 +15,13 @@
     <Project Path="Dtos/StruttonTechnologies.Core.Identity.Dtos/StruttonTechnologies.Core.Identity.Dtos.csproj" />
   </Folder>
   <Folder Name="/Interfaces/">
-    <Project Path="Interfaces/StruttonTechnologies.Core.Composition.Contracts/StruttonTechnologies.Core.Composition.Contracts.csproj" Id="4b5f84b8-e44c-43d5-b8bb-2e7cd33a5fbf" />
     <Project Path="Interfaces/StruttonTechnologies.Core.EF.Contracts/StruttonTechnologies.Core.EF.Contracts.csproj" />
-    <Project Path="Interfaces/StruttonTechnologies.Core.Identity.API.Contracts/StruttonTechnologies.Core.Identity.API.Contracts.csproj" />
+    <Project Path="Interfaces/StruttonTechnologies.Core.Identity.API.Contracts/StruttonTechnologies.Core.Identity.API.Contracts.csproj" Id="76f9afab-f036-490b-a29a-e7688af562d0" />
     <Project Path="Interfaces/StruttonTechnologies.Core.Identity.Domain.Contracts/StruttonTechnologies.Core.Identity.Domain.Contracts.csproj" />
     <Project Path="Interfaces/StruttonTechnologies.Core.Identity.Orchestration.Contracts/StruttonTechnologies.Core.Identity.Orchestration.Contracts.csproj" />
     <Project Path="Interfaces/StruttonTechnologies.Core.Orchestration.Contracts/StruttonTechnologies.Core.Orchestration.Contracts.csproj" />
     <Project Path="Interfaces/StruttonTechnologies.Core.Repositories.Contracts/StruttonTechnologies.Core.Repositories.Contracts.csproj" />
+    <Project Path="Interfaces/StruttonTechnologies.MediatR.Abstracts/StruttonTechnologies.MediatR.Abstracts.csproj" Id="3fef2c26-b0c1-4c07-bba2-bf06486f14b5" />
   </Folder>
   <Folder Name="/Messages/">
     <Project Path="Messages/StruttonTechnologies.Core.Coordinator.Contracts/StruttonTechnologies.Core.Coordinator.Contracts.csproj" />

@@ -5,7 +5,23 @@
     <RootNamespace>StruttonTechnologies.Core.Identity.API.Contracts</RootNamespace>
 
     <PackageId>StruttonTechnologies.Core.Identity.API.Contracts</PackageId>
-    <Description>Contracts and request abstractions for the Strutton Technologies Identity API.</Description>
+
+    <Title>Identity API Contracts for ST.Core</Title>
+
+    <Description>
+      API contract interfaces, request models, response models, and endpoint abstractions
+      for the Strutton Technologies Core Identity capability.
+    </Description>
+
+    <PackageTags>
+      core;CoreCapabilities;identity;authentication;authorization;jwt;
+      api;contracts;dto;requests;responses;
+      architecture;clean-architecture;modular;modular-architecture;
+      dotnet;strutton;struttontechnologies
+    </PackageTags>
+
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>alpha</VersionSuffix>
 
     <IsPackable>true</IsPackable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

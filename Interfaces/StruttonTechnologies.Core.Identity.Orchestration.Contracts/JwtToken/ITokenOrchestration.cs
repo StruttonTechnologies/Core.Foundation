@@ -20,6 +20,18 @@ public interface ITokenOrchestration<TKey>
     public DateTime GetExpirationTime();
 
     /// <summary>
+    /// Generates a refresh token for the specified user.
+    /// </summary>
+    /// <param name="userId">The unique identifier of the user.</param>
+    /// <param name="username">The username of the user.</param>
+    /// <param name="cancellationToken">A token to monitor for cancellation requests.</param>
+    /// <returns>A task that represents the asynchronous operation. The task result contains the generated refresh token as a string.</returns>
+    Task<string> GenerateRefreshTokenAsync(
+        TKey userId,
+        string username,
+        CancellationToken cancellationToken = default);
+
+    /// <summary>
     /// Validates a JWT token and returns the associated claims principal if valid.
     /// </summary>
     public Task<ClaimsPrincipal?> ValidateTokenAsync(string token, CancellationToken cancellationToken);

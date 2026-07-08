@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Package identity -->
+		<PackageId>STSS.Core.Rules</PackageId>
+		<Title>Core Rules</Title>
+		<Description>Dependency-free rule authorities for universal concepts such as email addresses, phone numbers, US ZIP codes, URLs, file names, identifiers, page sizes, text, and date ranges.</Description>
+
+		<!-- Versioning -->
+		<VersionPrefix>1.0.0</VersionPrefix>
+		<VersionSuffix>alpha</VersionSuffix>
+
+		<PackageTags>
+			core;rules;validation;normalization;email;phone;zip-code;url;file-name;
+			identifiers;date-range;clean-architecture;shared-kernel;strutton;struttontechnologies
+		</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Contact\" />
+		<Folder Include="Dates\" />
+		<Folder Include="Files\" />
+		<Folder Include="Identifiers\" />
+		<Folder Include="Internet\" />
+		<Folder Include="Location\" />
+		<Folder Include="Numeric\" />
+		<Folder Include="Text\" />
+	</ItemGroup>
+
+</Project>

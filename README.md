@@ -1,14 +1,14 @@
-﻿# StruttonTechnologies.Core.Foundation
+# STSS.Core.Foundation
 
-The foundational building blocks of the Strutton Technologies ecosystem.
+The dependency-free foundation of the Strutton Technologies engineering ecosystem.
 
 ## Overview
 
-`StruttonTechnologies.Core.Foundation` contains the core contracts, domain models, DTOs, messages, and abstractions that define the capabilities shared across the Strutton Technologies platform.
+`STSS.Core.Foundation` defines the shared contracts, models, messages, rules, and abstractions upon which higher-level capabilities are built.
 
-This solution serves as the architectural foundation upon which higher-level solutions such as Identity, Implementations, External, and application-specific services are built.
+This solution contains the architectural building blocks that are intended to be reused throughout the Strutton Technologies ecosystem. Projects within Foundation are implementation-agnostic and focus on defining capabilities rather than implementing workflows.
 
-The projects contained within this solution are intentionally implementation-agnostic and focus on defining what the system is rather than how it operates.
+The solution is organized by capability while remaining dependency-free whenever possible. It provides the common language used by higher-level solutions such as Identity, Implementations, Presentation, and application-specific systems.
 
 ---
 
@@ -23,8 +23,31 @@ The Foundation solution provides:
 - Identity contracts and domain abstractions
 - Entity Framework contracts
 - Shared capability definitions
+- Universal rule authorities
 
 Projects within this solution should contain minimal business logic and avoid implementation-specific dependencies whenever possible.
+
+---
+
+## Repository Layout
+
+```text
+Core.Foundation
+�
++-- src
+�   +-- Domains
+�   +-- Dtos
+�   +-- Interfaces
+�   +-- Messages
+�   +-- Rules
+�
++-- tests
+    +-- STSS.Core.Foundation.UnitTests
+    +-- STSS.Core.Foundation.FunctionalTests
+    +-- STSS.Core.Foundation.IntegrationTests
+```
+
+The repository is organized to clearly separate production code from automated tests while maintaining a consistent structure across all Strutton Technologies solutions.
 
 ---
 
@@ -32,27 +55,58 @@ Projects within this solution should contain minimal business logic and avoid im
 
 ```text
 Core.Foundation
-│
-├── Domains
-│   ├── StruttonTechnologies.Core.Domain
-│   └── StruttonTechnologies.Core.Identity.Domain
-│
-├── Dtos
-│   ├── StruttonTechnologies.Core.Dtos
-│   ├── StruttonTechnologies.Core.Coordinator.Dtos
-│   └── StruttonTechnologies.Core.Identity.Dtos
-│
-├── Interfaces
-│   ├── StruttonTechnologies.Core.EF.Contracts
-│   ├── StruttonTechnologies.Core.Repositories.Contracts
-│   ├── StruttonTechnologies.Core.Orchestration.Contracts
-│   ├── StruttonTechnologies.Core.Identity.Domain.Contracts
-│   ├── StruttonTechnologies.Core.Identity.Orchestration.Contracts
-│
-└── Messages
-    ├── StruttonTechnologies.Core.Coordinator.Contracts
-    └── StruttonTechnologies.Core.Identity.Coordinator.Contracts
+�
++-- Domains
+�   +-- STSS.Core.Domain
+�   +-- STSS.Core.Identity.Domain
+�
++-- Dtos
+�   +-- STSS.Core.Dtos
+�   +-- STSS.Core.Coordinator.Dtos
+�   +-- STSS.Core.Identity.Dtos
+�
++-- Interfaces
+�   +-- STSS.Core.EF.Contracts
+�   +-- STSS.Core.Repositories.Contracts
+�   +-- STSS.Core.Orchestration.Contracts
+�   +-- STSS.Core.Identity.Domain.Contracts
+�   +-- STSS.Core.Identity.Orchestration.Contracts
+�   +-- STSS.MediatR.Abstracts
+�
++-- Messages
+�   +-- STSS.Core.Coordinator.Contracts
+�   +-- STSS.Core.Identity.Coordinator.Contracts
+�
++-- Rules
+    +-- STSS.Core.Rules
 ```
+
+Each project represents an independently versioned capability that can be consumed through NuGet without exposing unnecessary implementation details.
+
+---
+
+## Foundation Rules
+
+`STSS.Core.Rules` contains dependency-free rule authorities for universally applicable concepts.
+
+Examples include:
+
+- EmailRules
+- PhoneNumberRules
+- UsZipCodeRules
+- UrlRules
+
+Rule classes are the authoritative source for operations associated with a concept, including:
+
+- Validation
+- Normalization
+- Formatting
+- Parsing
+- Other dependency-free behavior
+
+Rule classes are intentionally implemented as static classes and may be referenced by any architectural layer without introducing inappropriate coupling.
+
+Rules describe universally true concepts. They do not contain application-specific business logic.
 
 ---
 
@@ -60,19 +114,24 @@ Core.Foundation
 
 ```text
 Core.ToolKits
-    ↓
+        �
+        ?
 Core.Foundation
-    ↓
+        �
+        ?
 Core.Identity
-    ↓
+        �
+        ?
 Core.Implementations
-    ↓
-Core.External
-
-Core.TestingToolKit
+        �
+        ?
+Core.PresentationLayer
+        �
+        ?
+Applications
 ```
 
-Foundation acts as the shared dependency layer between reusable toolkits and higher-level implementations.
+Foundation serves as the stable dependency layer between reusable toolkits and higher-level implementations.
 
 ---
 
@@ -82,15 +141,21 @@ Foundation acts as the shared dependency layer between reusable toolkits and hig
 
 Projects within Foundation may depend on:
 
-- StruttonTechnologies.Core.ToolKit packages
-- Other Foundation projects
+- .NET Base Class Library
+- Strutton Technologies Core ToolKit packages
+- Other Foundation projects when appropriate
 
-Projects within Foundation should not depend on:
+Projects within Foundation should never depend on:
 
 - Core.Identity implementations
 - Core.Implementations projects
-- Core.External projects
+- Core.PresentationLayer projects
 - Application-specific solutions
+- Infrastructure implementations
+
+Foundation must remain implementation-agnostic.
+
+---
 
 ### Separation of Concerns
 
@@ -99,6 +164,7 @@ Foundation defines:
 - Contracts
 - Models
 - Messages
+- Rules
 - Abstractions
 
 Foundation does not implement:
@@ -109,15 +175,46 @@ Foundation does not implement:
 - User interfaces
 - Infrastructure services
 
+---
+
 ### Package Boundaries
 
-Each project is packaged independently to allow consumers to reference only the components required by their application.
+Each project is packaged independently to allow consumers to reference only the capabilities required by their application.
 
 Examples include:
 
 - Repository contracts without Entity Framework implementations
 - Coordinator message contracts without handlers
 - Domain models without persistence concerns
+- Rule authorities without validation frameworks
+
+---
+
+### Solution vs. Package Organization
+
+The Foundation solution is organized by dependency hierarchy to support development and maintenance.
+
+Projects are organized by capability and packaged independently.
+
+```text
+Solution
+    ?
+Dependency Organization
+
+Project
+    ?
+Capability
+
+Package
+    ?
+Reusable Feature
+
+Namespace
+    ?
+Logical API Surface
+```
+
+Consumers reference capabilities rather than architectural layers.
 
 ---
 
@@ -130,13 +227,14 @@ Foundation is built after ToolKits and before all higher-level solutions.
 2. Core.Foundation
 3. Core.Identity
 4. Core.Implementations
-5. Core.External
-6. Core.TestingToolKit
+5. Core.PresentationLayer
+6. Applications
 ```
 
 ---
 
 ## License
 
-Copyright © Strutton Technologies.  
+Copyright � Strutton Technologies.
+
 All rights reserved.

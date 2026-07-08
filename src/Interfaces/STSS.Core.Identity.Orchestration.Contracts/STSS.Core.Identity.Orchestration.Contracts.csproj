@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>STSS.Core.Identity.Orchestration.Contracts</PackageId>
+    <Description>Contracts for the STSS.Core.Identity orchestration layer.</Description>
+    <Title>Identity Orchestration Contracts</Title>
+    <PackageTags>core,identity,orchestration,contracts,MediatR,strutton,StruttonTechnologies</PackageTags>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>alpha</VersionSuffix>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dtos\STSS.Core.Identity.Dtos\STSS.Core.Identity.Dtos.csproj" />
+  </ItemGroup>
+</Project>

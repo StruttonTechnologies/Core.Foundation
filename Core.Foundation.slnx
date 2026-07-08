@@ -4,27 +4,43 @@
     <File Path="Directory.Build.props" />
     <File Path="Directory.Build.targets" />
     <File Path="Directory.Packages.props" />
+    <File Path="README.md" />
   </Folder>
-  <Folder Name="/Domains/">
-    <Project Path="Domains/StruttonTechnologies.Core.Domain/StruttonTechnologies.Core.Domain.csproj" />
-    <Project Path="Domains/StruttonTechnologies.Core.Identity.Domain/StruttonTechnologies.Core.Identity.Domain.csproj" />
+
+  <Folder Name="/src/Rules/">
+    <Project Path="src/Rules/STSS.Core.Rules/STSS.Core.Rules.csproj" Id="cc91b736-8f2e-4070-8952-ff87bc9fbbc0" />
   </Folder>
-  <Folder Name="/Dtos/">
-    <Project Path="Dtos/StruttonTechnologies.Core.Coordinator.Dtos/StruttonTechnologies.Core.Coordinator.Dtos.csproj" />
-    <Project Path="Dtos/StruttonTechnologies.Core.Dtos/StruttonTechnologies.Core.Dtos.csproj" />
-    <Project Path="Dtos/StruttonTechnologies.Core.Identity.Dtos/StruttonTechnologies.Core.Identity.Dtos.csproj" />
+  <Folder Name="/src/" />
+
+  <Folder Name="/src/Domains/">
+    <Project Path="src/Domains/STSS.Core.Domain/STSS.Core.Domain.csproj" />
+    <Project Path="src/Domains/STSS.Core.Identity.Domain/STSS.Core.Identity.Domain.csproj" />
   </Folder>
-  <Folder Name="/Interfaces/">
-    <Project Path="Interfaces/StruttonTechnologies.Core.EF.Contracts/StruttonTechnologies.Core.EF.Contracts.csproj" />
-    <Project Path="Interfaces/StruttonTechnologies.Core.Identity.API.Contracts/StruttonTechnologies.Core.Identity.API.Contracts.csproj" Id="76f9afab-f036-490b-a29a-e7688af562d0" />
-    <Project Path="Interfaces/StruttonTechnologies.Core.Identity.Domain.Contracts/StruttonTechnologies.Core.Identity.Domain.Contracts.csproj" />
-    <Project Path="Interfaces/StruttonTechnologies.Core.Identity.Orchestration.Contracts/StruttonTechnologies.Core.Identity.Orchestration.Contracts.csproj" />
-    <Project Path="Interfaces/StruttonTechnologies.Core.Orchestration.Contracts/StruttonTechnologies.Core.Orchestration.Contracts.csproj" />
-    <Project Path="Interfaces/StruttonTechnologies.Core.Repositories.Contracts/StruttonTechnologies.Core.Repositories.Contracts.csproj" />
-    <Project Path="Interfaces/StruttonTechnologies.MediatR.Abstracts/StruttonTechnologies.MediatR.Abstracts.csproj" Id="3fef2c26-b0c1-4c07-bba2-bf06486f14b5" />
+
+  <Folder Name="/src/Dtos/">
+    <Project Path="src/Dtos/STSS.Core.Coordinator.Dtos/STSS.Core.Coordinator.Dtos.csproj" />
+    <Project Path="src/Dtos/STSS.Core.Dtos/STSS.Core.Dtos.csproj" />
+    <Project Path="src/Dtos/STSS.Core.Identity.Dtos/STSS.Core.Identity.Dtos.csproj" />
   </Folder>
-  <Folder Name="/Messages/">
-    <Project Path="Messages/StruttonTechnologies.Core.Coordinator.Contracts/StruttonTechnologies.Core.Coordinator.Contracts.csproj" />
-    <Project Path="Messages/StruttonTechnologies.Core.Identity.Coordinator.Contracts/StruttonTechnologies.Core.Identity.Coordinator.Contracts.csproj" />
+
+  <Folder Name="/src/Interfaces/">
+    <Project Path="src/Interfaces/STSS.Core.EF.Contracts/STSS.Core.EF.Contracts.csproj" />
+    <Project Path="src/Interfaces/STSS.Core.Identity.API.Contracts/STSS.Core.Identity.API.Contracts.csproj" Id="76f9afab-f036-490b-a29a-e7688af562d0" />
+    <Project Path="src/Interfaces/STSS.Core.Identity.Domain.Contracts/STSS.Core.Identity.Domain.Contracts.csproj" />
+    <Project Path="src/Interfaces/STSS.Core.Identity.Orchestration.Contracts/STSS.Core.Identity.Orchestration.Contracts.csproj" />
+    <Project Path="src/Interfaces/STSS.Core.Orchestration.Contracts/STSS.Core.Orchestration.Contracts.csproj" />
+    <Project Path="src/Interfaces/STSS.Core.Repositories.Contracts/STSS.Core.Repositories.Contracts.csproj" />
+    <Project Path="src/Interfaces/STSS.MediatR.Abstracts/STSS.MediatR.Abstracts.csproj" Id="3fef2c26-b0c1-4c07-bba2-bf06486f14b5" />
   </Folder>
+
+  <Folder Name="/src/Messages/">
+    <Project Path="src/Messages/STSS.Core.Coordinator.Contracts/STSS.Core.Coordinator.Contracts.csproj" />
+    <Project Path="src/Messages/STSS.Core.Identity.Coordinator.Contracts/STSS.Core.Identity.Coordinator.Contracts.csproj" />
+  </Folder>
+
+  <Folder Name="/Tests/">
+  <Project Path="tests/STSS.Core.Foundation.UnitTests/STSS.Core.Foundation.UnitTests.csproj" />
+  <Project Path="tests/STSS.Core.Foundation.FunctionalTests/STSS.Core.Foundation.FunctionalTests.csproj" />
+  <Project Path="tests/STSS.Core.Foundation.IntegrationTests/STSS.Core.Foundation.IntegrationTests.csproj" />
+</Folder>
 </Solution>

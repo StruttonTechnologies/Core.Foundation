@@ -1,0 +1,7 @@
+namespace STSS.Core.Identity.API.Contracts.Authorization
+{
+    public interface IGetUserClaimsRequest
+    {
+        public string UserId { get; }
+    }
+}

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- Package identity -->
+		<PackageId>STSS.Core.Domain</PackageId>
+		<Title>Core Domain Layer</Title>
+		<Description>Domain entities, value objects, and business rules for the StruttonTechnologies Core in STSS.Core.</Description>
+
+		<!-- Versioning -->
+		<VersionPrefix>1.0.0</VersionPrefix>
+		<VersionSuffix>alpha</VersionSuffix>
+
+		<PackageTags>
+			core;user;domain;entities;value-objects;ddd;domain-model;clean-architecture;
+			architecture;business-model;strutton;struttontechnologies
+		</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Folder Include="Entities\Identity\" />
+	</ItemGroup>
+
+</Project>

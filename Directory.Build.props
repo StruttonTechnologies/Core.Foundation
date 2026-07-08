@@ -1,4 +1,4 @@
-<Project>
+﻿<Project>
 	<PropertyGroup>
 		
 		<!-- Target framework (can be overridden in .csproj) -->
@@ -10,7 +10,7 @@
 		<LangVersion>preview</LangVersion>
 
 		<!-- Repository metadata -->
-		<RepositoryUrl>https://github.com/StruttonTechnologies/StruttonTechnologies.Core.API.Controller</RepositoryUrl>
+		<RepositoryUrl>https://github.com/StruttonTechnologies/STSS.Core.API.Controller</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 

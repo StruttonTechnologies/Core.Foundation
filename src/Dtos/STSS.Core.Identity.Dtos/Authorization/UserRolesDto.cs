@@ -1,0 +1,4 @@
+namespace STSS.Core.Identity.Dtos.Authorization;
+
+
+public record UserRolesDto(string UserId, IList<string> Roles);

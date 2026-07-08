@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- Package identity -->
+		<PackageId>STSS.Core.Coordinator.Contracts</PackageId>
+		<Title>Coordinator Contracts for ST.Core</Title>
+		<Description>
+			Contract interfaces and abstractions for dispatching and routing in STSS.Core.
+		</Description>
+		<PackageTags>core; contracts; interfaces; strutton; struttontechnologies; commands; queries; mediatr; cqrs</PackageTags>
+
+		<!-- Versioning -->
+		<VersionPrefix>1.0.0</VersionPrefix>
+		<VersionSuffix>alpha</VersionSuffix>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="MediatR.Contracts" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Dtos\STSS.Core.Coordinator.Dtos\STSS.Core.Coordinator.Dtos.csproj" />
+	  <ProjectReference Include="..\..\Dtos\STSS.Core.Dtos\STSS.Core.Dtos.csproj" />
+	</ItemGroup>
+</Project>

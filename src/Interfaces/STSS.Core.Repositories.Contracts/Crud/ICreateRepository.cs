@@ -1,4 +1,4 @@
-namespace STSS.Core.Repositories.Contracts.Crud;
+﻿namespace STSS.Core.Repositories.Contracts.Crud;
 
 
 public interface ICreateRepository<TEntity>
